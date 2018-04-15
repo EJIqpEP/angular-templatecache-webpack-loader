@@ -1,6 +1,6 @@
 {
-  "name": "angular-templatecache-loader",
-  "version": "0.2.0",
+  "name": "angular-templatecache-loader-2",
+  "version": "0.3.4",
   "description": "Webpack angular templateCache loader",
   "main": "index.js",
   "scripts": {
@@ -14,9 +14,9 @@
     "loader"
   ],
   "author": {
-    "name": "Alexander Kochergin",
-    "email": "ejiqpep@gmail.com",
-    "url": "https://github.com/EJIqpEP"
+    "name": "Paul Bastowski",
+    "email": "pbastowski@gmail.com",
+    "url": "https://github.com/pbastowski"
   },
   "license": "MIT",
   "devDependencies": {
@@ -33,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/EJIqpEP/angular-templatecache-webpack-loader"
+    "url": "https://github.com/pbastowski/angular-templatecache-loader"
   },
   "bugs": {
-    "url": "https://github.com/EJIqpEP/angular-templatecache-webpack-loader/issues"
+    "url": "https://github.com/pbastowski/angular-templatecache-loader/issues"
   },
-  "homepage": "https://github.com/EJIqpEP/angular-templatecache-webpack-loader"
+  "homepage": "https://github.com/pbastowski/angular-templatecache-loader"
 }

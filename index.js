@@ -16,6 +16,7 @@ module.exports = function (source) {
   var outputPath;
   var outputSource = '';
 
+  var relativeTo = query.relativeTo || '';
   var prefix = query.prefix || '';
   var module = query.module ? query.module : 'ng';
 
@@ -25,9 +26,9 @@ module.exports = function (source) {
   root = root.replace(/\\/g, separator);
 
   if (prefix) {
-    outputPath = prefix + resourcePath.replace(root, '');
+    outputPath = prefix + resourcePath.replace(root, '').replace(relativeTo, '');
   } else {
-    outputPath = resourcePath.replace(root, '').slice(1);
+    outputPath = resourcePath.replace(root, '').slice(1).replace(relativeTo, '');
   }
 
   this.cacheable && this.cacheable();

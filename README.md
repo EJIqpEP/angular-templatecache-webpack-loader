@@ -1,5 +1,7 @@
 # Angular templatecache webpack loader
 
+> This repo adds the 
+
 Puts HTML files to Angular $templateCache.
 
 
@@ -46,7 +48,20 @@ index.html
   }
 ```
 
-3. You can also use context in webpack to pass correct template url. See [Context example](https://github.com/EJIqpEP/angular-templatecache-loader/tree/master/examples/context)
+3. relativeTo - remove a string from the path
+
+relativeTo is used to strip a matching prefix from the path of the input html file.
+
+```javascript
+  {
+    test: /\.html$/,
+    loader: "angular-templatecache-loader?relativeTo=/public/"
+  }
+```
+
+The above will remove the "/public/" from the generated templateUrl path.
+
+4. You can also use context in webpack to pass correct template url. See [Context example](https://github.com/EJIqpEP/angular-templatecache-loader/tree/master/examples/context)
 
 ```javascript
 var app = path.join(__dirname, 'app');
